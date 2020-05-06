@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <script src="jQuery.js"></script> -->
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+
+    <title></title>
+  </head>
+  <body>
+
+    <!-- <input type="checkbox" name="type" value="4" />
+    <input type="checkbox" name="type" value="3" />
+    <input type="checkbox" name="type" value="1" />
+    <input type="checkbox" name="type" value="5" />
+
+    <fieldset class="fieldset">
+      <legend>Ingredients</legend>
+      <input id="checkbox12" value="Apple" class="cb" type="checkbox">
+      <label for="checkbox12">Apple</label>
+      <input id="checkbox22" value="Orange" class="cb" type="checkbox">
+      <label for="checkbox22">Orange</label>
+      <input id="checkbox32" value="Cinnamon" class="cb" type="checkbox">
+      <label for="checkbox32">Cinnamon</label>
+    </fieldset>
+
+    <h4>Lists:</h4>
+    <ul>
+
+    </ul> -->
+
+    <h1>JavaScript - Print value of all checked (selected) CheckBoxes on Button click.</h1>
+    <big>Select your favourite accessories: </big><br>
+    <input type="checkbox" name="acs" value="Mobile">Mobile<br>
+    <input type="checkbox" name="acs" value="Tab">Tab<br>
+    <input type="checkbox" name="acs" value="Laptop">Laptop<br>
+    <input type="checkbox" name="acs" value="IPod">IPod<br>
+    <p>
+      <input type="button" onclick='printChecked()' value="Check Out"/>
+    </p>
+
+
+
+    <script type="text/javascript">
+    	function printChecked(){
+    		var items=document.getElementsByName('acs');
+    		var selectedItems="";
+    		for(var i=0; i<items.length; i++){
+    			if(items[i].type=='checkbox' && items[i].checked==true)
+    				selectedItems+=items[i].value+"\n";
+    		}
+    		alert(selectedItems);
+    	}
+    </script>
+  </body>
+</html>
